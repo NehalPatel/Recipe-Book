@@ -1,5 +1,7 @@
 <template name="RecipesList">
-	{{> NewRecipe }}
+	{{! #with Recipes}}
+		{{> NewRecipe }}
+	{{! /with}}
 
 	<section class="recipes">
 		{{#if Template.subscriptionsReady}}

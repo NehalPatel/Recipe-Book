@@ -7,7 +7,7 @@ import '../../components/Recipes/Recipe.js';
 import './RecipesList.html';
 
 const Collections = {
-	Recipes
+ 	Recipes
 };
 
 Template.registerHelper('Collections', Collections);

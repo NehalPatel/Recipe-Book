@@ -1,6 +1,14 @@
 import { Meteor } from 'meteor/meteor';
+import { Session } from 'meteor/session';
+import { Recipes } from '/imports/api/recipes/recipes.js';
 
 import './NewRecipe.html';
+
+Template.NewRecipe.helpers({
+	newRecipe: function(){
+		return Session.get('newRecipe');
+	}
+});
 
 Template.NewRecipe.events({
 
@@ -13,3 +21,6 @@ Template.NewRecipe.events({
 	}
 
 });
+
+
+

@@ -1,0 +1,18 @@
+<template name="RecipeSingle">
+		<section class="recipes">
+		
+		{{#with recipe}}
+		<article class="recipe {{#if inMenu}}in-menu{{/if}}">
+			<h3>{{name}}</h3>
+			<p class="desc">{{desc}}</p>
+
+			<ul class="list-items">
+				{{#each ingredients}}
+				<li><span class="ingredients">{{name}} - {{amount}}</span></li>
+				{{/each}}
+			</ul>
+		</article>
+		{{/with}}
+
+	</section>
+</template>

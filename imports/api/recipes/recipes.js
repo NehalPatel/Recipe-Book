@@ -66,4 +66,4 @@ RecipesSchema = new SimpleSchema({
 	}
 });
 
-Recipes.attachSchema( RecipesSchema, { tracker: Tracker } );
+Recipes.attachSchema( RecipesSchema );

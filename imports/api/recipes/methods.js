@@ -1,10 +1,10 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import { Links } from './recipes.js';
+import { Recipes } from './recipes.js';
 
 Meteor.methods({
 
-	'toggleMenuItem' : function(id, currentState){
+	'toggleMenuItem'(id, currentState){
 		Recipes.update(id, {
 			$set: {
 				inMenu : !currentState
@@ -12,7 +12,7 @@ Meteor.methods({
 		});
 	},
 
-	'deleteRecipe' : function(id){
+	'deleteRecipe'(id){
 		Recipes.remove(id);
 	}
 	

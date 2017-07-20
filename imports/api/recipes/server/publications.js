@@ -7,7 +7,7 @@ Meteor.publish('recipes.all', function () {
   	return Recipes.find();
 });
 
-Meteor.publish('singleRecipe', function (id) {
-	check(id, String);
+Meteor.publish('recipe.single', function (id) {
+	//check(id, String);
 	return Recipes.find({_id: id});
 });

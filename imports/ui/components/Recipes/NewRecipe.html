@@ -1,16 +1,16 @@
 <template name="NewRecipe">
 
-	
+		{{#if newRecipe }}
 
 		<div class="new-recipe-container">
 			<i class="fa fa-close"></i>
 			{{> quickForm collection=Collections.Recipes id="insertRecipeForm" type="insert" class="new-recipe-form"}}
 		</div>
 
-	
+		{{else}}
 
 		<button class="new-recipe">New Recipe</button>
 
-	
+		{{/if}}
 	
 </template>
